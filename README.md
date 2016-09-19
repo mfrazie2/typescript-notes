@@ -10,8 +10,9 @@ Benefits of typed language
 
 TypeScript Compiler -> `tsc` transpiles TypeScript to JavaScript
 - Install via `npm install -g typescript`
-- Run `tsc test.ts` in root directory of project
+- Run `tsc` in root directory of project
  - Note that a `test.js` file is created and is the correct ES5 syntax
+ - Note that a `js` directory is created that contains the transpiled JavaScript files, along with source map files
 
 `tsconfig.json`
 - `compilerOptions`
