@@ -1,0 +1,19 @@
+{
+  "name": "typescript-notes",
+  "version": "1.0.0",
+  "description": "Notes on TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfrazie2/typescript-notes.git"
+  },
+  "author": "Mike Frazier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mfrazie2/typescript-notes/issues"
+  },
+  "homepage": "https://github.com/mfrazie2/typescript-notes#readme"
+}
