@@ -20,3 +20,8 @@ TypeScript Compiler -> `tsc` transpiles TypeScript to JavaScript
 	- `outFile` combines multiple TS files into one JS file
 	- `outDir` creates individual JS files for each TS file and place in specified directory
 	- `sourceMap` option creates map for each JS file, linking back to TS line numbers (helps with debugging)
+
+Reference Other TS Files
+- `outFile` option may assemble transpiled JS in incorrect order
+- Use triple-slash reference at top of TS file: `/// <reference path="otherTSFile.ts" />`
+- This will help to be sure the order of transpiled JS is correct
