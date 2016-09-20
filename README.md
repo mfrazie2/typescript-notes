@@ -1,6 +1,4 @@
-# Notes from A Practical Start with TypeScript
-[A Practical Start with TypeScript](https://app.pluralsight.com/library/courses/typescript-practical-start/table-of-contents)
-
+# Notes on TypeScript
 
 ## Notes
 Benefits of typed language
@@ -25,3 +23,63 @@ Reference Other TS Files
 - `outFile` option may assemble transpiled JS in incorrect order
 - Use triple-slash reference at top of TS file: `/// <reference path="otherTSFile.ts" />`
 - This will help to be sure the order of transpiled JS is correct
+
+
+## TypeScript Basics
+Data Types
+- Built-In
+	- boolean
+	- string
+	- number
+- Custom
+	- enum
+	- array
+	- interface
+	- class
+
+Opt Out of Typing Variable
+```javascript
+var anyType: any = 4;
+anyType = "Some string";
+anyType = true;
+// The `any` type effectively gives back loose typing of JS.
+```
+
+```javascript
+var str: string = "String Type";
+var num: number = 42;
+var bool: boolean = true;
+
+
+
+Set Properties to Private
+```javascript
+class Foo {
+	bar: number = 1;
+	private baz: string = "cannot change me";
+}
+var fooInstance = new Foo();
+fooInstance.bar = 42; // acceptable to do
+fooInstance.baz = "changed string"; // throws an error
+```
+
+Use Getters and Setters
+```javascript
+class Foo {
+	private baz: string = "cannot change me";
+	get Baz() {
+		return this.baz;
+	}
+	set Baz(newString: string) {
+		this.baz = newString;
+	}
+}
+var fooInstance = new Foo();
+fooInstance.Baz; // "cannot change me"
+fooInstance.Baz("changed");
+fooInstance.Baz; // "changed"
+```
+
+TypeScript has typing for standard JS objects
+- Typings must be used for external libraries
+- [Typings on GitHub](https://github.com/typings/typings)
