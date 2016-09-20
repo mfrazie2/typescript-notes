@@ -50,6 +50,9 @@ var str: string = "String Type";
 var num: number = 42;
 var bool: boolean = true;
 
+var arr: number[] = [1,2,3,4,5];
+var strArr: string[] = ["hello", "world"];
+```
 
 
 Set Properties to Private
