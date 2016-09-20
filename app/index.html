@@ -2,11 +2,23 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<h1> Vending Machine Simulation</h1>
+			<div class="col-md-8"></div>
+			<div class="col-md-4">
+				<h4> Paid: $
+					<span id="total"></span>
+					<br><br>
+					<button class="btn btn-primary" onclick="machine.acceptCoin(new Quarter())">
+						Insert Quarter
+					</button>
+				</h4>
+			</div>
 		</div>
+		<script src="js/coin.js"></script>
 		<script src="js/vendingmachine.js"></script>
 		<script src="js/bootstrapper.js"></script>
 </html>
